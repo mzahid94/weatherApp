@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" styleClass="bodybg" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Weather_app.Weathers_app.PrimaryController">
+   <children>
+      <VBox alignment="CENTER" layoutX="80.0" layoutY="65.0" prefHeight="369.0" prefWidth="359.0">
+         <children>
+            <AnchorPane prefHeight="340.0" prefWidth="329.0" style="-fx-background-color: &quot;#F0F0F0&quot;;">
+               <children>
+                  <Button fx:id="primaryButton" layoutX="214.0" layoutY="211.0" onAction="#switchToSecondary" text="Search" />
+                  <Text layoutX="190.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your location" />
+                  <TextField fx:id="locationText" layoutX="165.0" layoutY="174.0" />
+                  <Button fx:id="loginButton" layoutX="350.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToLoginPage" prefHeight="25.0" prefWidth="58.0" text="Login" />
+                  <Button fx:id="signupButton" layoutX="408.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToSignUpPage" text="Sign Up" />
+                  <TextArea fx:id="errorField" editable="false" layoutX="147.0" layoutY="73.0" prefHeight="59.0" prefWidth="185.0" visible="false" wrapText="true" />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

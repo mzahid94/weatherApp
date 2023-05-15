@@ -1,0 +1,47 @@
+.container {
+    -fx-background-image: url("file:src/main/resources/cloudy.jpg");
+}
+
+.icon-image{
+	-fx-graphic: url("file:src/main/resources/plus.png");
+}
+
+.info-box {
+    -fx-padding: 20px;
+    -fx-background-color: #F0F0F0;
+    -fx-border-radius: 5px;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.info-label {
+    -fx-font-size: 12px;
+}
+
+/* Custom styles for specific labels */
+
+#temperatureLabel {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+#dateLabel{
+	-fx-font-size:20px;
+	-fx-font-weight: bold;
+}
+
+#maxTempLabel, #minTempLabel, #precipitationLabel {
+    -fx-font-size: 12px;
+}
+
+#sourceLabel {
+    -fx-font-size: 12px;
+}
+
+#cityLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px
+}
